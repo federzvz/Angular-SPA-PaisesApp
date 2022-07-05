@@ -28,6 +28,13 @@ export class PaisService {
     return this.http.get(url);
   }
 
+  buscarPorRegion(region: string): Observable<any>{
+    const url = `${this.apiUrl}/region/${region}`;
+    return this.http.get(url);
+  }
+
+
+
 
 
 }
